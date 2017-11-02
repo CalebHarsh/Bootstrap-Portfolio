@@ -1,34 +1,36 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Bootstrap Portfolio</title>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="bootstrap.css">
+        <title>Bootstrap Portfolio</title>
        
     </head>
-    <body style="background-image: url(images/background1.png)">
+    <body>
         <!-- navbar -->
-        <nav class="navbar navbar-expnad-lg navbar-light bg-light">
-            <h1 class="navbar-brand mb-0">Caleb Harshman</h1>
-            <ul class="nav justify-content-end">
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link" style="color:grey;">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="portfolio.html" class="nav-link" style="color:grey;">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a href="contact.html" class="nav-link" style="color:grey;">Contact</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-sm navbar-light bg-light py-0 border border-top-0 border-right-0 border-left-0 border-secondary">
+            <h1 class="navbar-brand mb-0 p-3 text-white bg-info">Caleb Harshman</h1>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a href="index.html" class="nav-item nav-link">About</a>
+                    <a href="portfolio.html" class="nav-item nav-link">Portfolio</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+            </div>
         </nav>
         <!-- Main Content -->
-        <div class="container">
+        <div class="container mb-5">
             <div class="row">
                 <div class="col-md-8">
                     <!-- Left Content -->
                     <div class="card mt-3">
                         <div class="card-body">
-                            <h2 style="color: teal;">Contact</h2>
+                            <h2 class="text-info">Contact</h2>
                             <hr>
                             <div class="row">
                                 <div class="col-sm-12">                        
@@ -57,27 +59,32 @@
                     <div class="card mt-3">
                         <div class="card-body">
                             <div class="row">
-                                <div class="col-sm-12">
-                                    <h3 style="color: teal;">Connect with Me</h3>
+                                <div class="col-12">
+                                    <span class="text-info h5">Connect with Me</span>
                                     <hr>
                                 </div>
                             </div>
                             <div class="row">                            
-                                <div class="col-sm-4">
-                                    <a href="https://github.com/CalebHarsh" target="_blank"><img src="images/git_hub_logo1.png" class="img-fluid"></a>
+                                <div class="col-4">
+                                    <a href="https://github.com/CalebHarsh" target="_blank"><img src="images/git_hub_logo1.png" width=128 class="img-fluid"></a>
                                 </div>
-                                <div class="col-sm-4">
+                                <div class="col-4">
                                     <a href="https://www.linkedin.com/in/caleb-harshman-2b2181146/" target="_blank"><img src="images/linkedin_logo.png" class="img-fluid"></a>
                                 </div>
-                                <div class="col-sm-4">
+                                <div class="col-4">
                                     <a href="https://stackoverflow.com/users/8544933/caleb-harshman?tab=profile" target="_blank"><img src="images/stack_logo.png" class="img-fluid"></a>
-                                </div>  
+                                </div> 
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+             <!-- spacing for footer -->
+             <div class="row p-3"></div>
         </div>
+        <footer class="footer">
+            <span class="text-white">©Copyright Caleb Harshman</span>
+        </footer>
     </body>
 </html>
                
